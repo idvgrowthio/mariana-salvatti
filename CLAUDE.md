@@ -1,4 +1,4 @@
-# MazyOS — Sistema operacional do negócio
+# Mariana Salvati Advocacia — MazyOS
 
 Sua empresa roda em cima desse arquivo. Aqui ficam as regras de operação
 do MazyOS — como o Claude lê o contexto, aprende com correções, mantém
@@ -113,3 +113,51 @@ Quando o usuário pedir skill nova:
 4. Se a skill precisar de arquivos de apoio (templates, exemplos),
    criar dentro da pasta da skill
 5. Seguir o fluxo da skill-creator nativa do Claude Code
+
+---
+
+# Perfil: Mariana Salvati Advocacia (freelancer)
+
+## O que é esse workspace
+
+Operação de marketing digital do escritório **Mariana Salvati Sociedade
+Individual de Advocacia** (Dra. Mariana Battimanza Salvati, OAB/RS 139.028).
+Quem opera é João Guilherme, responsável por tráfego pago, site e landing
+page. A Mariana atende sozinha e o canal de atendimento é o WhatsApp.
+
+**Estrutura de pastas:**
+- `_memoria/`: quem é a Mariana, como ela fala, o foco atual
+- `identidade/`: paleta (Orbe Estúdio), logos MSA, fotos
+- `marketing/site/`: site institucional e páginas de SEO
+- `marketing/landing-page/`: landing page de busca e apreensão
+- `marketing/google-ads/`: estrutura de campanha, palavras-chave, negativas, anúncios
+- `marketing/meta-ads/`: transcrições e referências dos criativos em vídeo
+- `saidas/`: relatórios para a Mariana, e-mails, documentos pontuais
+- `dados/`: exports do Google Ads, termos de pesquisa, planilhas (não versionado)
+
+## O que o escritório faz
+
+Defesa de consumidores em busca e apreensão de veículos (financiamento com
+alienação fiduciária). Cliente típico: financiou um veículo, atrasou parcelas
+e recebeu notificação extrajudicial, ou já teve o carro apreendido. Anúncios
+rodam para todo o Brasil.
+
+## Regras do sistema
+
+- **Compliance OAB (Provimento 205/2021) em toda peça:** sem promessa de resultado,
+  sem mercantilização, sem urgência fabricada. "Especialista" só se ela tiver
+  título de especialização (pendente de confirmação).
+- **Políticas do Google Ads** para serviços jurídicos: revisar o texto antes de publicar.
+- **Objetivo de toda peça:** lead *qualificado* no WhatsApp. Filtrar quem não é
+  público antes do clique (deixar claro quem ela atende).
+- **Relatórios para a Mariana:** sempre com diagnóstico + próximo passo, não só
+  números. Ela quer entender por que algo funciona ou não e quais são as soluções.
+- **Dados pessoais** (RG, CNH, data de nascimento) nunca entram neste repositório.
+- Texto público em "você". O "tu" fica só para o Instagram, se ela quiser.
+
+## Ferramentas conectadas
+
+- [ ] Google Ads
+- [ ] Google Analytics / Tag Manager (conversão do clique no WhatsApp)
+- [ ] Google Search Console (SEO)
+- [x] Meta Ads (conector disponível nesta sessão)
