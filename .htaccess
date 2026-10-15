@@ -1,0 +1,10 @@
+# Proteção: se o Document root do Plesk ainda for "httpdocs" (raiz do repositório),
+# serve a pasta publicar/ na raiz do domínio e bloqueia o resto do projeto (_memoria, marketing, etc.).
+# Com o Document root correto (httpdocs/publicar), este arquivo fica fora do site e não tem efeito.
+Options -Indexes
+DirectoryIndex index.html
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_URI} !^/publicar/
+RewriteRule ^(.*)$ publicar/$1 [L]
