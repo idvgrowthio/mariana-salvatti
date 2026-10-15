@@ -25,6 +25,8 @@ DirectoryIndex index.html
 # Endereço antigo da LP -> novo
 Redirect 301 /lp/busca-e-apreensao/ /buscaeapreensao/
 
+AddType font/woff2 .woff2
+
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/css application/javascript image/svg+xml application/xml text/plain
 </IfModule>
@@ -34,10 +36,11 @@ Redirect 301 /lp/busca-e-apreensao/ /buscaeapreensao/
   ExpiresByType text/html "access plus 0 seconds"
   ExpiresByType text/css "access plus 7 days"
   ExpiresByType application/javascript "access plus 7 days"
-  ExpiresByType image/webp "access plus 30 days"
-  ExpiresByType image/jpeg "access plus 30 days"
-  ExpiresByType image/png "access plus 30 days"
-  ExpiresByType image/x-icon "access plus 30 days"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
 </IfModule>
 
 <IfModule mod_headers.c>

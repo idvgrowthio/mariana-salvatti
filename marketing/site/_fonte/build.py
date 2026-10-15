@@ -93,7 +93,7 @@ def cabecalho(prefixo, atual):
     return f'''<a class="pular" href="#conteudo">Pular para o conteúdo</a>
 <header class="cabecalho">
   <div class="wrap">
-    <a class="marca" href="{rel(prefixo, '/')}"><picture><source media="(max-width: 820px)" srcset="{prefixo}img/logo-principal-claro.png"><img src="{prefixo}img/logo-horizontal-claro.png" alt="Mariana Salvati Advocacia &amp; Consultoria" width="379" height="24"></picture></a>
+    <a class="marca" href="{rel(prefixo, '/')}"><picture><source media="(max-width: 820px)" srcset="{prefixo}img/logo-principal-claro-300.png"><img src="{prefixo}img/logo-horizontal-claro-760.png" alt="Mariana Salvati Advocacia &amp; Consultoria" width="379" height="24"></picture></a>
     <button class="menu-botao" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><svg><use href="#i-menu"/></svg></button>
     <nav class="menu" id="menu" aria-label="Principal">{itens}<a class="btn btn-whats js-whats" data-situacao="geral" href="#"><svg><use href="#i-whats"/></svg>WhatsApp</a></nav>
   </div>
@@ -110,7 +110,7 @@ def rodape(prefixo):
     return f'''<footer>
   <div class="padrao" aria-hidden="true"></div>
   <div class="wrap">
-    <div class="rodape-logo"><img src="{prefixo}img/logo-principal-claro.png" alt="Mariana Salvati Advocacia &amp; Consultoria" width="600" height="160" loading="lazy"></div>
+    <div class="rodape-logo"><img src="{prefixo}img/logo-principal-claro-420.png" alt="Mariana Salvati Advocacia &amp; Consultoria" width="420" height="112" loading="lazy" decoding="async"></div>
     <nav aria-label="Rodapé"><b>Navegação</b>{links}</nav>
     <nav aria-label="Artigos"><b>Artigos</b>{artigos}</nav>
     <div>
@@ -135,6 +135,18 @@ def rodape(prefixo):
 </div>
 
 <div class="barra-fixa"><a class="btn btn-whats js-whats" data-situacao="geral" href="#"><svg><use href="#i-whats"/></svg>{CTA}</a></div>'''
+
+
+FONTES = '@font-face{font-family:"Inter";font-style:normal;font-weight:400 600;font-display:swap;src:url(@@P@@assets/fonts/inter.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}@font-face{font-family:"Playfair Display";font-style:normal;font-weight:400 600;font-display:swap;src:url(@@P@@assets/fonts/playfair.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}@font-face{font-family:"Playfair Display";font-style:italic;font-weight:400 600;font-display:swap;src:url(@@P@@assets/fonts/playfair-italico.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}'
+
+
+def css_embutido(prefixo):
+    """CSS inteiro no <head>: evita um pedido bloqueante ao servidor antes de desenhar a página."""
+    css = open(os.path.join(RAIZ, 'assets', 'site.css'), encoding='utf-8').read()
+    css = re.sub(r'/\*.*?\*/', '', css, flags=re.S)
+    css = re.sub(r'\s+', ' ', css)
+    css = re.sub(r'\s*([{};:,>])\s*', r'\1', css).replace(';}', '}')
+    return FONTES.replace('@@P@@', prefixo) + css.strip()
 
 
 def cabeca(meta, prefixo):
@@ -171,10 +183,9 @@ def cabeca(meta, prefixo):
   var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i;
   f.parentNode.insertBefore(j,f);}})(window,document,'script','dataLayer','GTM-XXXXXXX');
 </script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{prefixo}assets/site.css">
+<link rel="preload" href="{prefixo}assets/fonts/playfair.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{prefixo}assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+<style>{css_embutido(prefixo)}</style>
 {schemas}</head>'''
 
 

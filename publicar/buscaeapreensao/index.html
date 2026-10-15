@@ -29,13 +29,14 @@
   f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');
 </script>
 
-<link rel="preload" as="image" href="img/hero-guincho.webp" media="(min-width: 821px)">
-<link rel="preload" as="image" href="img/hero-guincho-mobile.webp" media="(max-width: 820px)">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero-guincho-1440.webp" media="(min-width: 821px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero-guincho-720.webp" media="(max-width: 820px)" fetchpriority="high">
+<!-- Fontes servidas pelo próprio domínio (pasta /assets/fonts/ do site), sem depender do Google Fonts -->
+<link rel="preload" href="../assets/fonts/playfair.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
 
 <style>
+  @font-face{font-family:"Inter";font-style:normal;font-weight:400 600;font-display:swap;src:url(../assets/fonts/inter.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}@font-face{font-family:"Playfair Display";font-style:normal;font-weight:400 600;font-display:swap;src:url(../assets/fonts/playfair.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}@font-face{font-family:"Playfair Display";font-style:italic;font-weight:400 600;font-display:swap;src:url(../assets/fonts/playfair-italico.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
   /* ===== Paleta oficial: Orbe Estúdio Criativo (identidade/design-guide.md) ===== */
   :root {
     --azul-profundo: #161B1E;
@@ -367,7 +368,7 @@
 <!-- TOPO -->
 <header class="topo">
   <div class="wrap">
-    <a class="marca" href="https://marianasalvati.adv.br/"><picture><source media="(max-width: 820px)" srcset="img/logo-principal-claro.png"><img src="img/logo-horizontal-claro.png" alt="Mariana Salvati Advocacia &amp; Consultoria" width="379" height="24"></picture></a>
+    <a class="marca" href="https://marianasalvati.adv.br/"><picture><source media="(max-width: 820px)" srcset="img/logo-principal-claro-300.png"><img src="img/logo-horizontal-claro-760.png" alt="Mariana Salvati Advocacia &amp; Consultoria" width="379" height="24"></picture></a>
     <div class="topo-contato">
       <span>OAB/RS 139.028</span>
       <a class="btn btn-claro js-whats" data-situacao="geral" href="#"><svg><use href="#i-whats"/></svg>Fale com uma advogada especialista em busca e apreensão de veículo</a>
@@ -380,8 +381,8 @@
 <!-- HERO -->
 <section class="hero">
   <picture>
-    <source media="(max-width: 820px)" srcset="img/hero-guincho-mobile.webp" type="image/webp">
-    <source srcset="img/hero-guincho.webp" type="image/webp">
+    <source media="(max-width: 820px)" srcset="img/hero-guincho-720.webp" type="image/webp">
+    <source srcset="img/hero-guincho-1440.webp" type="image/webp">
     <img src="img/hero-guincho.jpg" alt="" width="1920" height="1513" fetchpriority="high">
   </picture>
   <div class="hero-corpo">
@@ -534,7 +535,7 @@
 <section class="sobre" id="sobre">
   <div class="wrap">
     <div class="sobre-foto">
-      <img src="img/mariana.jpg" alt="Advogada Mariana Salvati" width="880" height="1084" loading="lazy">
+      <picture><source type="image/webp" srcset="img/mariana-440.webp 440w, img/mariana-880.webp 880w" sizes="(max-width: 820px) 330px, 400px"><img src="img/mariana-440.jpg" srcset="img/mariana-440.jpg 440w, img/mariana.jpg 880w" sizes="(max-width: 820px) 330px, 400px" alt="Advogada Mariana Salvati" width="440" height="542" loading="lazy" decoding="async"></picture>
       <div class="sobre-assinatura">OAB/RS 139.028</div>
     </div>
     <div>
@@ -594,7 +595,7 @@
 <footer>
   <div class="padrao" aria-hidden="true"></div>
   <div class="wrap">
-    <div class="rodape-logo"><img src="img/logo-principal-claro.png" alt="Mariana Salvati Advocacia &amp; Consultoria" width="600" height="160" loading="lazy"></div>
+    <div class="rodape-logo"><img src="img/logo-principal-claro-420.png" alt="Mariana Salvati Advocacia &amp; Consultoria" width="420" height="112" loading="lazy" decoding="async"></div>
     <div>
       <p><strong>Mariana Salvati Sociedade Individual de Advocacia</strong></p>
       <p>CNPJ 65.564.592/0001-10</p>
