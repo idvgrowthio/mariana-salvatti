@@ -1,0 +1,29 @@
+{
+  "_como_usar": "Cole aqui SOMENTE avaliações reais do Google Meu Negócio. Nome abreviado (ex.: 'Carlos M.'). Use apenas avaliações que falam do atendimento, nunca de resultado de processo (Provimento 205/2021 da OAB). Depois rode: python _fonte/build.py",
+  "_fonte": "Prints do Perfil da Empresa no Google enviados em 15/out/2026. Ficaram de fora as avaliações truncadas (Dilza, Wilson) e as sem texto (Ildo, Douglas).",
+  "perfil_google": "https://share.google/CHljKYNmDuU6BgrjD",
+  "nota": null,
+  "total": null,
+  "avaliacoes": [
+    {"nome": "Isadora V.", "estrelas": 5, "quando": "jul/2026",
+     "texto": "Excelente profissional! Muito atenciosa, prestativa e sempre disposta a esclarecer todas as dúvidas com paciência e clareza. Responde às mensagens rapidamente, transmite confiança e demonstra muito conhecimento e comprometimento com o trabalho. Fui muito bem atendida e recomendo seus serviços de olhos fechados!"},
+    {"nome": "Gisela B.", "estrelas": 5, "quando": "set/2026",
+     "texto": "Dra. Mariana é uma advogada muito séria, sempre pronta a tirar dúvidas e muito rápida e clara para nos posicionar sobre o processo."},
+    {"nome": "Adriano S.", "estrelas": 5, "quando": "jul/2026",
+     "texto": "A Mariana tem um excelente atendimento. Ela busca entender a sua situação e apresenta todas as soluções plausíveis. Ela transmite confiança, transparência e segurança. Parabéns, continue com o seu ótimo trabalho!"},
+    {"nome": "Magali M.", "estrelas": 5, "quando": "set/2026",
+     "texto": "O atendimento maravilhoso, tira todas as dúvidas e facilita muito a minha vida."},
+    {"nome": "Anna J.", "estrelas": 5, "quando": "jul/2026",
+     "texto": "Recomendo a Dra. Mariana pela sua experiência, competência e dedicação. Sempre muito atenciosa, esclareceu todas as minhas dúvidas com paciência. Uma advogada de confiança, que me transmitiu segurança."},
+    {"nome": "Allan O.", "estrelas": 5, "quando": "jul/2026",
+     "texto": "Atendimento excelente e muito transparente. Toda equipe demonstrou profundo conhecimento técnico e me manteve informado sobre cada etapa do processo. Recomendo muito o trabalho e a seriedade do escritório."},
+    {"nome": "Jones K.", "estrelas": 5, "quando": "jul/2026",
+     "texto": "Excelente profissional! Nossa experiência tem sido muito positiva. Ela atua com competência, dedicação e comprometimento, sempre nos mantendo informados com clareza e transparência. É uma advogada ética, responsável e muito preparada. Recomendamos seu trabalho com total confiança."},
+    {"nome": "Felipe G.", "estrelas": 5, "quando": "jul/2026",
+     "texto": "Atendimento atencioso e dedicado. Escritório de atuação de alto nível. Escolha segura para cuidar de qualquer questão jurídica."},
+    {"nome": "Rose", "estrelas": 5, "quando": "jul/2026",
+     "texto": "Atendimento excepcional. Super recomendo. Pessoas humanas e super bem preparadas."},
+    {"nome": "Indústria Metalúrgica Jardim", "estrelas": 5, "quando": "jul/2026",
+     "texto": "É quem cuida do nosso jurídico, nosso suporte de confiança. A Dra. Mariana faz um excelente trabalho, nos dá todo o apoio necessário para tomada de decisões importantes e sempre realiza trabalhos preventivos a fim de nos manter atualizados em boas práticas. Recomendamos a todas as empresas da região, independente do ramo."}
+  ]
+}

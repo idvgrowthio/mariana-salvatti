@@ -77,7 +77,7 @@ Fixar (pin) na posição 1: grupo A → título 2; grupo B → título 3; grupo 
 | Orçamento | **[aguardando valor da Mariana]**. Não estimar CPC sem o Planejador de Palavras-chave |
 | Dispositivos | Mobile primeiro (público chega pelo celular e vai para o WhatsApp) |
 
-## Landing page (`/lp/busca-e-apreensao/`)
+## Landing page (`/buscaeapreensao/`)
 
 Precisa existir antes de ligar a campanha. Estrutura para filtrar o lead:
 

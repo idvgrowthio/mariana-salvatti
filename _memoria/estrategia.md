@@ -16,7 +16,7 @@ sozinha, todo lead fora do perfil consome o tempo dela.
 
 ## Prioridade principal
 
-1. **Landing page** focada em busca e apreensão, com filtro de qualificação
+1. ✅ **Landing page** pronta em 14/out/2026 (`marketing/landing-page/`), aguardando publicação. Era: focada em busca e apreensão, com filtro de qualificação
    antes do botão de WhatsApp (deixar claro quem ela atende: financiamento em
    atraso + notificação recebida ou veículo já apreendido)
 2. **Campanha Google Ads de pesquisa** com palavras-chave de intenção alta
@@ -25,7 +25,7 @@ sozinha, todo lead fora do perfil consome o tempo dela.
    concurso, modelo de petição)
 3. **Rastreamento de conversão** do clique no WhatsApp, para medir custo por lead
    qualificado e não só por clique
-4. **Site institucional + SEO**, com conteúdo que responda às dúvidas que o
+4. ✅ **Site institucional** 1ª entrega pronta em 14/out/2026 (`marketing/site/`): Home, Serviço, Sobre, Contato, pilar + 2 artigos. Aguarda revisão jurídica e publicação. Era: **Site institucional + SEO**, com conteúdo que responda às dúvidas que o
    público pesquisa no Google (posicionamento orgânico de médio prazo)
 
 ## O que pode esperar

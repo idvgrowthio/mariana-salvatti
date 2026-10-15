@@ -19,7 +19,7 @@ Domínio: **marianasalvati.adv.br** (hospedagem ativa, sem site)
 /advogada-busca-e-apreensao/                   Página de serviço (alvo do termo transacional)
 /sobre/                                        Mariana Salvati, OAB/RS 139.028
 /contato/
-/lp/busca-e-apreensao/                         Landing page do Google Ads (noindex)
+/buscaeapreensao/                         Landing page do Google Ads (noindex)
 ```
 
 A landing page do Ads leva `noindex` para não competir com a página de serviço.
@@ -108,7 +108,7 @@ Os artigos usam `Article` com `author` → `#mariana` e `FAQPage` na seção de 
 | Open Graph (compartilhar no WhatsApp com foto e título) | pendente |
 | Google Search Console + envio do sitemap | pendente |
 | GA4 + Tag Manager (evento `clique_whatsapp`) | pendente |
-| `noindex` na /lp/ do Ads | pendente |
+| `noindex` na LP do Ads (/buscaeapreensao/) | pendente |
 | Rodapé com nome completo, OAB, CNPJ, endereço (transparência OAB) | pendente |
 
 ## Links internos
