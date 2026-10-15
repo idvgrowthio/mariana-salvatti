@@ -62,10 +62,9 @@ A landing page do Ads leva `noindex` para não competir com a página de serviç
   "taxID": "65.564.592/0001-10",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Estrada João Passuelo, 641 - Vila Nova",
+    "streetAddress": "Rua Mostardeiro, 366, Sala 501 - Moinhos de Vento",
     "addressLocality": "Porto Alegre",
     "addressRegion": "RS",
-    "postalCode": "91740-550",
     "addressCountry": "BR"
   },
   "areaServed": { "@type": "Country", "name": "Brasil" },

@@ -17,7 +17,7 @@
 ## Dados de contato e cadastro
 
 - **CNPJ:** 65.564.592/0001-10
-- **Endereço comercial:** Estrada João Passuelo, 641 — Vila Nova, Porto Alegre/RS — CEP 91740-550
+- **Endereço comercial:** Rua Mostardeiro, 366, Sala 501 — Moinhos de Vento, Porto Alegre/RS — CEP [confirmar] (atualizado em 15/out/2026; o endereço antigo, Estrada João Passuelo, 641, não vale mais)
 - **WhatsApp de atendimento:** +55 51 99207-4913
 - **E-mail:** contato@marianasalvati.adv.br
 - **Instagram:** @salvatiadvogada

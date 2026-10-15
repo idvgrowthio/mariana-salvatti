@@ -5,7 +5,7 @@
 
 ## ⚠️ Decisão antes de criar: o endereço recebe clientes?
 
-O endereço comercial é **Estrada João Passuelo, 641 — Vila Nova, Porto Alegre/RS**.
+O endereço comercial é **Rua Mostardeiro, 366, Sala 501 — Moinhos de Vento, Porto Alegre/RS**.
 
 - **Se a Mariana recebe clientes lá** (com placa ou identificação): perfil com endereço visível.
 - **Se não recebe** (ex.: é residência ou endereço só de correspondência): perfil de
