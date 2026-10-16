@@ -149,6 +149,10 @@ def css_embutido(prefixo):
     return FONTES.replace('@@P@@', prefixo) + css.strip()
 
 
+TAGS_HEAD = '<!-- Google Tag Manager -->\n<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({\'gtm.start\':\nnew Date().getTime(),event:\'gtm.js\'});var f=d.getElementsByTagName(s)[0],\nj=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=\n\'https://www.googletagmanager.com/gtm.js?id=\'+i+dl;f.parentNode.insertBefore(j,f);\n})(window,document,\'script\',\'dataLayer\',\'GTM-T8BF26VH\');</script>\n<!-- End Google Tag Manager -->\n<!-- Google tag (gtag.js) -->\n<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18517050566"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag(\'js\', new Date());\n\n  gtag(\'config\', \'AW-18517050566\');\n</script>'
+TAGS_BODY = '<!-- Google Tag Manager (noscript) -->\n<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T8BF26VH"\nheight="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>\n<!-- End Google Tag Manager (noscript) -->'
+
+
 def cabeca(meta, prefixo):
     url = DOMINIO + meta['caminho']
     schemas = ''.join('<script type="application/ld+json">%s</script>\n' % json.dumps(s, ensure_ascii=False, indent=1)
@@ -176,13 +180,7 @@ def cabeca(meta, prefixo):
 <!-- Google Search Console: se for verificar por meta tag, cole aqui -->
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Mariana Salvati Advocacia">
-<!-- Google Tag Manager: trocar GTM-XXXXXXX pelo ID real -->
-<script>
-  window.dataLayer = window.dataLayer || [];
-  (function(w,d,s,l,i){{if(i.indexOf('XXXX')>-1)return;w[l].push({{'gtm.start':new Date().getTime(),event:'gtm.js'}});
-  var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i;
-  f.parentNode.insertBefore(j,f);}})(window,document,'script','dataLayer','GTM-XXXXXXX');
-</script>
+{TAGS_HEAD}
 <link rel="preload" href="{prefixo}assets/fonts/playfair.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{prefixo}assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
 <style>{css_embutido(prefixo)}</style>
@@ -205,7 +203,7 @@ def gerar():
         corpo = corpo.replace('{{AVALIACOES}}', bloco_avaliacoes())
         corpo = corpo.replace('{{P}}', prefixo).replace('{{CTA}}', CTA)
         corpo = re.sub(r'\{\{L:(.*?)\}\}', lambda x: rel(prefixo, x.group(1)), corpo)
-        html = (cabeca(meta, prefixo) + '\n<body>\n' + SVG + '\n' + cabecalho(prefixo, meta.get('menu', caminho))
+        html = (cabeca(meta, prefixo) + '\n<body>\n' + TAGS_BODY + '\n' + SVG + '\n' + cabecalho(prefixo, meta.get('menu', caminho))
                 + '\n\n<main id="conteudo">\n' + corpo.strip() + '\n</main>\n\n' + rodape(prefixo)
                 + f'\n\n<script src="{prefixo}assets/site.js"></script>\n</body>\n</html>\n')
         destino = os.path.join(RAIZ, *[p for p in caminho.strip('/').split('/') if p], 'index.html') \

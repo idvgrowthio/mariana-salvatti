@@ -54,7 +54,7 @@ Como referência geral, sem ser específica do nicho, relatórios internacionais
 
 Sem conversão medida, o Google não otimiza e o lance "Maximizar conversões" não funciona.
 
-1. **Tag Manager:** crie o contêiner e troque `GTM-XXXXXXX` pelo ID real na LP e no site (em `_fonte/build.py`). Depois rode `python marketing/publicar.py` e faça o push.
+1. ✅ **Tags instaladas** em todas as páginas (16/out/2026): Tag Manager `GTM-T8BF26VH` (no `<head>` e o noscript logo após o `<body>`) e a tag do Google Ads `AW-18517050566`.
 2. **No Google Ads:** Metas → Conversões → Nova ação → Site → **"Clique no WhatsApp"**:
    - Categoria: **Contato**
    - Valor: igual para todas

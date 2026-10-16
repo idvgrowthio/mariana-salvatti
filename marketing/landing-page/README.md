@@ -7,7 +7,7 @@ Publicar em `https://marianasalvati.adv.br/buscaeapreensao/` (`index.html` + pas
 - [x] **Identidade aplicada**: paleta oficial da Orbe, logos (versões claras cortadas em `img/`) e foto da Mariana
 - [x] **Imagens**: hero em WebP (com JPG de fallback), foto e logos já em `img/`
 - [ ] **Foto do topo**: é um carro americano (Unsplash, licença livre). Trocar por uma foto brasileira quando houver
-- [ ] **GTM**: trocar `GTM-XXXXXXX` pelo ID real
+- [x] **GTM** instalado: `GTM-T8BF26VH` + tag do Google Ads `AW-18517050566` (16/out/2026)
 - [ ] **Revisão jurídica da Mariana**: seções "Etapas" e "Perguntas comuns"
 - [ ] Confirmar se o endereço pode aparecer (ver `marketing/seo/03-google-meu-negocio.md`)
 

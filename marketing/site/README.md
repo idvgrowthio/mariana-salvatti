@@ -69,7 +69,7 @@ O `.htaccess` gerado já cuida da página 404, da compressão, do cache de image
 
 - [ ] **Revisão jurídica da Mariana nos 3 artigos.** Eles citam o Decreto-Lei 911/1969, as Súmulas e Temas do STJ (72, 722, 1132), o REsp sobre e-mail (2025), a Lei 14.711/2023 e o Provimento CNJ 196/2025. Os textos foram escritos com base em pesquisa, mas a responsabilidade técnica é dela.
 - [ ] "Especialista" no botão: confirmar o título de especialização (regra da OAB)
-- [ ] Trocar `GTM-XXXXXXX` (no `build.py`) pelo ID real e rodar o build de novo
+- [x] Tag Manager `GTM-T8BF26VH` e tag do Google Ads `AW-18517050566` instalados em todas as páginas (16/out/2026)
 - [ ] Confirmar se o endereço pode aparecer (ver `marketing/seo/03-google-meu-negocio.md`)
 - [ ] FAQ "Quanto custa": confirmar com a Mariana a frase sobre a tabela da OAB/RS
 
