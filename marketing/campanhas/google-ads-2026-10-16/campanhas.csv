@@ -1,0 +1,2 @@
+﻿Campaign,Campaign Type,Networks,Budget,Budget type,Bid Strategy Type,Campaign Status,Languages,Final URL suffix,Ad rotation
+MSA | Pesquisa | Busca e Apreensão,Search,Google search,[DEFINIR],Daily,Maximize clicks,Paused,pt,utm_source=google&utm_medium=cpc&utm_campaign=busca-apreensao&utm_content={adgroupid}&utm_term={keyword},Optimize

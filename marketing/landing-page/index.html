@@ -636,7 +636,11 @@
   var grupo = new URLSearchParams(location.search).get('grupo');
   var variantes = {
     notificacao: ['Advogada · Notificação extrajudicial', 'Recebeu a notificação do banco? <em>Calma, ainda dá tempo de agir.</em>', 'A notificação não leva o seu carro. Antes disso, a financeira ainda precisa cumprir etapas e prazos.'],
-    apreendido: ['Advogada · Veículo apreendido', 'Seu carro foi levado? <em>Calma, ainda existem caminhos.</em>', 'A lei ainda dá prazos para agir, mas eles são curtos: 5 dias para reaver o veículo.']
+    apreendido: ['Advogada · Veículo apreendido', 'Seu carro foi levado? <em>Calma, ainda existem caminhos.</em>', 'A lei ainda dá prazos para agir, mas eles são curtos: 5 dias para reaver o veículo.'],
+    // grupos novos da campanha do Google Ads (mensagem do anúncio = mensagem da página)
+    advogado: ['Advogada especialista · OAB/RS 139.028', 'Advogada em busca e apreensão de veículo. <em>Calma, posso te ajudar a resolver.</em>', 'Atendimento direto com a advogada, online em todo o Brasil. Envie a sua notificação ou o seu processo.'],
+    extrajudicial: ['Advogada · Busca e apreensão em cartório', 'Busca e apreensão pelo cartório? <em>Calma, ainda dá para agir.</em>', 'O procedimento extrajudicial exige cláusula no contrato e notificação prévia. Eu verifico se foram cumpridas.'],
+    portoalegre: ['Advogada em Porto Alegre · Moinhos de Vento', 'Busca e apreensão em Porto Alegre? <em>Calma, posso te ajudar a resolver.</em>', 'Escritório na Rua Mostardeiro, no Moinhos de Vento, com atendimento presencial ou online.']
   };
   if (variantes[grupo]) {
     document.getElementById('hero-alerta').textContent = variantes[grupo][0];
